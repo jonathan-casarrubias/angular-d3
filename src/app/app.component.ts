@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as moment from 'moment';
+import * as d3 from 'd3';
 
 @Component({
   moduleId: module.id,
@@ -8,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  constructor() {
+    console.log(moment().format());
+    console.log(d3);
+  }
 }
